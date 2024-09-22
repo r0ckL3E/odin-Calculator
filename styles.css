@@ -1,42 +1,51 @@
-        /* Add your styles here */
-        #container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        #calcBox {
-            border: 2px solid black;
-            background: yellow;
-            width: 300px;
-            padding: 20px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-        }
-        #resultBox {
-            grid-column: span 4;
-            font-size: 50px;
-            border: 2px solid black;
-            background: white;
-            height: 100px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-            padding: 10px;
-        }
-        button {
-            padding: 20px;
-            font-size: 30px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            background-color: #4CAF50;
-            color: white;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        .highlight {
-            background-color: #ffa500; /* Orange color for highlighting */
-        }
+body {
+    background: linear-gradient(135deg, rgb(255, 168, 168) 10%, rgb(252, 255, 0) 100%);
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#calcBox {
+    border: 2px solid black;
+    background: linear-gradient(96.2deg, rgb(255, 230, 112) 10.4%, rgb(255, 100, 100) 43.8%, rgb(0, 93, 219) 105.8%);
+    width: 300px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#resultBox {
+    grid-column: span 4;
+    font-size: 50px;
+    border: 2px solid black;
+    background: white;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFB6C1;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, lightcoral, lightsalmon);
+}
+
+.highlight {
+    background-color: #ffa500;
+}
